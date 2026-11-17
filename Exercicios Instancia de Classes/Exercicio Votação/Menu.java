@@ -4,7 +4,7 @@ import java.util.*;
 import java.io.*;
 
 public class Menu {
-    public static void main(String args[]){
+    public static void main(String args[])throws IOException{
         Votacao [] votacao = new Votacao[200];
         Metodos m = new Metodos();
         int opc = 0;
@@ -16,23 +16,18 @@ public class Menu {
                     + "4 - mostrar indicadores \n"
                     + "9 - finalizar sistema"));
                 switch(opc){
-                    case 1: 
-                        votacao = m.fcadastravotacao(votacao);
+                    case 1: votacao = m.fcadastravotacao(votacao);
                         break;
-                    case 2: 
-                        votacao = m.fclassificasecao(votacao);
+                    case 2: votacao = m.fclassificasecao(votacao);
                         break;
-                    case 3: 
+                    case 3: votacao = m.gravavotacao(votacao);
                         break;
-                    case 4:
-                        //m.pmostraindicadores();
+                    case 4: m.pmostraindicadores(votacao);
                         break;
-                    case 9: 
-                        JOptionPane.showMessageDialog(null,"Fim");
+                    case 9: JOptionPane.showMessageDialog(null,"Fim");
                         System.exit(0);
                         break;
-                    default: 
-                        JOptionPane.showMessageDialog(null,"Opção inválida");    
+                    default: JOptionPane.showMessageDialog(null,"Opção inválida");    
                 }
         }
     }
