@@ -70,7 +70,7 @@ public class Metodos {
         System.out.println("********************************************************************************* \n"
                 + "Numero de cidades acima da media: "+cont);
     }
-//    public void procedures{
+
 //        public Acidente[] GravaAcidente(Acidente[]acidente)throws IOException{
 //            int i; String fileName= "ArquivoAcidente.txt";
 //            BufferedWriter gravar = new BufferedWriter(new FileWriter(fileName));
@@ -86,6 +86,4 @@ public class Metodos {
 //                
 //            }
 //        }
-//    }
-//    public void 
 }
